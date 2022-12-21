@@ -5,27 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Profile card component</title>
 
 </head>
 <body>
-  <div class="profile-card">
-    <div class="profile-main">
-      <div class="profile-img"></div>
-      <div class="profile-info">
-        Victor Crest
-        26
-        London
+  <main>
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="profile-img"></div>
+        <div class="profile-info">
+          <div class="profile-name">
+            <span class="name">Victor Crest</span>
+            <span class="age">26</span>
+          </div>
+          <div class="profile-loc">London</div>
+        </div>
+      </div>
+      <div class="profile-footer">
+        <ul class="profile-stats">
+          <li><span class="stat-num">80K</span><span class="stat-title">Followers</span></li>
+          <li><span class="stat-num">803K</span><span class="stat-title">Likes</span></li>
+          <li><span class="stat-num">1.4K</span><span class="stat-title">Photos</span></li>
+        </ul>
       </div>
     </div>
-    <div class="profile-footer">
-      <ul class="profile-stats">
-        <li><span class="stat-num">80K</span><span class="stat-title">Followers</span>/li>
-        <li><span class="stat-num">803K</span><span class="stat-title">Likes</span>li>
-        <li><span class="stat-num">1.4K</span><span class="stat-title">Photos</span>/li>
-      </ul>
-    </div>
-  </div>
+  </main>
 </body>
 </html>

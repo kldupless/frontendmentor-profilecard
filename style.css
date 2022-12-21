@@ -38,6 +38,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -77,7 +79,104 @@ select {
 }
 /* Project styles */
 
-/* Desktop styles */
-@media screen and (min-width: 1440px) {
+main{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./images/bg-pattern-top.svg') top -50vw left -50vw / 115% no-repeat,
+              url('./images/bg-pattern-bottom.svg') bottom -50vw right -50vw / 115% no-repeat,
+              hsl(185, 75%, 39%);
+}
+.profile-card{
+  width: 90vw;
+  max-height: 66vh;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  box-shadow:0px 0px 50px 1px hsl(227, 10%, 46%, 0.5);
+  color: hsl(227, 10%, 46%);
+  background: url('./images/bg-pattern-card.svg') center top / 100% no-repeat,
+              #ffffff;
+}
+
+.profile-header{
+  width: 100%;
+  height: 66%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em;
+}
+
+.profile-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0;
+  gap: 0.5em;
+}
+
+.profile-loc{
+  font-size: .8em;
+}
+
+.profile-img{
+  background: url('./images/image-victor.jpg') center / cover no-repeat;
+  border-radius: 100%;
+  border: 5px solid #fff;
+  width:  100px;
+  height: 100px;
+  margin-top: 25%;
+}
+
+.name {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.profile-footer {
+  border-top: 1px solid hsl(227, 10%, 46%, 0.2);
+}
+
+.stat-num{
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.profile-stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline-start: 0;
+  padding: 0.5em 2em;
+}
+
+.profile-stats > li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.stat-title {
+  font-size: .6em;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    background: url(./images/bg-pattern-top.svg) top -60vw left -50vw / 100% no-repeat,
+    url(./images/bg-pattern-bottom.svg) bottom -70vw right -40vw / 100% no-repeat,
+    hsl(185, 75%, 39%)
+  }
+  .profile-card{
+    max-width: 25vw;
+  }
 
 }
